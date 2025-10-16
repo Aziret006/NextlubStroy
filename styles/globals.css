@@ -74,9 +74,14 @@
   --sidebar-ring: oklch(0.439 0 0);
 }
 
-@theme inline {
-  --font-sans: 'Geist', 'Geist Fallback';
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+/* The @theme at-rule is not a standard CSS or Tailwind feature. 
+  It will not be recognized by browsers or most build tools. 
+  To make your variables work, move them into :root or a selector. 
+  For example: */
+
+:root {
+  --font-sans: 'Geist', 'Geist Fallback', sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -114,6 +119,9 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+
+/* Why it doesn't work? */
+/* Because the variables are not defined, and the fallback values are not provided. */
 
 @layer base {
   * {
