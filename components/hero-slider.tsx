@@ -7,12 +7,12 @@ import { translations, type Language } from "@/lib/translations"
 
 const slides = [
   {
-    image: "/modern-luxury-construction-site-with-cranes-and-bu.jpg",
+    image: "/elegant-residential-building-exterior-at-golden-ho.jpg",
     title: "hero.title",
     subtitle: "hero.subtitle",
   },
   {
-    image: "/elegant-residential-building-exterior-at-golden-ho.jpg",
+    image: "/modern-luxury-construction-site-with-cranes-and-bu.jpg",
     title: "hero.title",
     subtitle: "hero.subtitle",
   },
