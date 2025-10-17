@@ -34,7 +34,6 @@ export function WhyUsSection() {
           </div>
         </div>
 
-        {/* Partners */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
           {partners.map((partner) => (
             <div key={partner.name} className="flex items-center justify-center">

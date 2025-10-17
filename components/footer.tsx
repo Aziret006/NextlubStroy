@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, Building2 } from "lucide-react"
 import { translations, type Language } from "@/lib/translations"
 
 export function Footer() {
@@ -15,15 +15,20 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Logo & Description */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-accent-foreground font-serif">E</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-lg leading-tight">NextlubStroy</span>
-                <span className="text-primary-foreground/70 text-xs">BUILDING DEVELOPMENT</span>
-              </div>
+         <Link href="/" className="flex items-center gap-3 logo-hover">
+            <div className="relative w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg logo-animate">
+              <Building2 className="w-7 h-7 text-primary-foreground" />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse" />
             </div>
+            <div className="flex flex-col logo-animate">
+              <span className="font-bold text-xl leading-tight tracking-tight font-serif">
+                NextlubStroy
+              </span>
+              <span className="text-xs font-medium tracking-wide uppercase">
+                Строительство будущего
+              </span>
+            </div>
+          </Link>
             <p className="text-primary-foreground/80 leading-relaxed mb-6">
               {language === "ru"
                 ? "Профессиональная строительная компания. Создаем современные жилые комплексы премиум-класса с 2017 года."
@@ -97,7 +102,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/10 pt-8 text-center text-primary-foreground/60">
-          <p>© 2025 ELT Building Group. {t.footer.rights}</p>
+          <p>© 2025 NextlubStroy. {t.footer.rights}</p>
         </div>
       </div>
     </footer>
