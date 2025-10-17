@@ -15,20 +15,20 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Logo & Description */}
           <div className="md:col-span-2">
-         <Link href="/" className="flex items-center gap-3 logo-hover">
-            <div className="relative w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg logo-animate">
-              <Building2 className="w-7 h-7 text-primary-foreground" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse" />
-            </div>
-            <div className="flex flex-col logo-animate">
-              <span className="font-bold text-xl leading-tight tracking-tight font-serif">
-                NextlubStroy
-              </span>
-              <span className="text-xs font-medium tracking-wide uppercase">
-                Строительство будущего
-              </span>
-            </div>
-          </Link>
+          <Link href="/" className="flex items-center gap-3 logo-hover">
+              <div className="relative w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg logo-animate">
+                <Building2 className="w-7 h-7 text-primary-foreground" />
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse" />
+              </div>
+              <div className="flex flex-col logo-animate">
+                <span className="font-bold text-xl leading-tight tracking-tight font-serif">
+                  NextlubStroy
+                </span>
+                <span className="text-xs font-medium tracking-wide uppercase">
+                  Строительство будущего
+                </span>
+              </div>
+            </Link>
             <p className="text-primary-foreground/80 leading-relaxed mb-6">
               {language === "ru"
                 ? "Профессиональная строительная компания. Создаем современные жилые комплексы премиум-класса с 2017 года."
